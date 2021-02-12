@@ -1,0 +1,146 @@
+@import './var.scss';
+@import './mixmin.scss';
+/*header*/
+.header {
+  //@include header-position;
+  .header-list {
+   @include flex-ju-al-center;
+   @media only screen and (max-width: 990px) {
+     // display: none;
+ 
+   }
+
+    .header-item {
+      margin: 1rem 2rem;
+      cursor: pointer;
+
+      a{
+       @include link; 
+        .fa {
+          font-size: 1.8rem;
+          margin-right: 0.875rem;
+          color: $black;
+        }
+        &:hover {
+          color: rgba(0,0,0,0.6);
+        }
+      }
+    }
+  }
+
+  .menu-main {
+    @include flex-sp-bt-center; 
+    @media only screen and (max-width: 990px) {
+      flex: 1;
+    }
+
+    .logo {
+      a{
+        max-width: 100%;
+        img {
+          max-width: 55%;
+          width: 55%;
+        }
+      }
+    }
+    
+    nav.nav {
+      .list-items.header_menu_class {
+        display: flex;
+        @media only screen and (max-width: 990px) {
+          display: none;
+        }
+
+        .menu-item {
+          text-transform: uppercase;
+          padding:  0.5rem 1rem;
+          transition: border-bottom 0.2s ease;
+          a{
+            color: $black;
+            font-size: 0.875rem;
+            &:hover {
+              color: rgba(0,0,0,0.6);
+            }
+          }
+          &.current-menu-item {
+            border-bottom: 1px solid rgba(0,0,0,0.3);
+          }
+
+          &.menu-item-has-children {
+            position: relative;
+
+            &:after {
+              content: "\f078";
+              font-family: FontAwesome;
+              font-size: 10px;
+              font-style: normal;
+              font-weight: normal;
+              text-decoration: inherit;
+              display: inline-block;
+              vertical-align: super;
+              transition: transform 0.3s ease;
+            }
+            .sub-menu {
+            @include sub-menu; 
+       
+            }
+            &:hover {
+              .sub-menu {
+                display: block;
+                li {
+                  a {
+                    padding: 1rem 2rem;
+                    font-size: 0.875rem;
+                    color: $white
+                  }
+                  &:hover {
+                    border-bottom: none;
+                    background-color:  rgba(0,0,0,0.3);
+                  }
+                }
+              }
+            }
+            &:hover {
+              &:hover:after {
+                transform: rotate(180deg);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 990px) {
+    .moblie-col {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .top-header {
+    .pay-rent-btn {
+      padding: 6px 40px;
+      border: 1px solid $black;
+      border-radius: 6px;
+      // transform: translate(80%, 0px);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      .pay-rent-submit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        line-height: 1rem;
+        text-transform: uppercase;
+        .pay-rent-img {
+          width: 15%;
+          margin-right: 1rem;
+        }
+      }
+      &:hover {
+        background-color: rgba(0,0,0,0.3);
+      }
+    }
+  }
+}

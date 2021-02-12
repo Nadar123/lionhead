@@ -1,0 +1,54 @@
+/*home*/
+.home-page {
+  position: relative;
+}
+
+.home-page .no-padd {
+  padding: 0;
+}
+
+.home-page .home-title-wrapper {
+  position: absolute;
+  top: 15%;
+}
+
+@media only screen and (max-width: 480px) {
+  .home-page .home-title-wrapper {
+    top: 6%;
+    padding: 0 1rem;
+  }
+}
+
+.home-page .home-title-wrapper .title {
+  color: black;
+  font-size: 55px;
+  line-height: 60px;
+  font-weight: 600;
+  width: 63%;
+}
+
+@media only screen and (max-width: 480px) {
+  .home-page .home-title-wrapper .title {
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 600;
+    width: 100%;
+  }
+}
+
+.home-page .home-title-wrapper .sub-title {
+  padding-bottom: 1rem;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  color: black;
+}
+
+.home-page .home-title-wrapper .house-link-search {
+  width: 100%;
+}
+
+.home-page .home-title-wrapper .house-link-search .house-search {
+  min-height: auto;
+  margin-top: 1rem;
+}

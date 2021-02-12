@@ -1,0 +1,132 @@
+.footer-wrapper {
+  background-color: #282725;
+  padding: 4rem 0 2rem 0;
+}
+
+.footer-wrapper .footer-title,
+.footer-wrapper .footer-stay-contact,
+.footer-wrapper .associations-title,
+.footer-wrapper .associations-title {
+  padding-bottom: 1rem;
+}
+
+.footer-wrapper .footer-title h3,
+.footer-wrapper .footer-stay-contact h3,
+.footer-wrapper .associations-title h3,
+.footer-wrapper .associations-title h3 {
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.footer-wrapper .content {
+  display: flex;
+}
+
+.footer-wrapper .content:last-child {
+  padding-bottom: 1rem;
+}
+
+.footer-wrapper .content .icon {
+  margin-right: 1rem;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-wrapper .content .icon:hover {
+  transform: scale(1.4);
+}
+
+.footer-wrapper .content .text {
+  position: relative;
+  color: #fff;
+  font-size: 13px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-wrapper .content .text:hover, .footer-wrapper .content .text:focus {
+  left: 5px;
+}
+
+.footer-wrapper .associations-image {
+  width: 20%;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-wrapper .associations-image:hover {
+  transform: scale(1.4);
+}
+
+.footer-wrapper .associations-title {
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.footer-wrapper .login-portal {
+  text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+  .footer-wrapper .login-portal {
+    text-align: left;
+  }
+}
+
+.footer-wrapper .login-portal .online-title {
+  padding-bottom: 0.5rem;
+}
+
+.footer-wrapper .login-portal .online-title .title {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.footer-wrapper .login-portal .login-signup .login-link,
+.footer-wrapper .login-portal .login-signup .signin-link,
+.footer-wrapper .login-portal .owner-login-signup .login-link,
+.footer-wrapper .login-portal .owner-login-signup .signin-link {
+  color: #fff;
+  padding: 0.5rem;
+  transition: text-decoration 0.3s ease-in-out;
+}
+
+.footer-wrapper .login-portal .login-signup .login-link:hover,
+.footer-wrapper .login-portal .login-signup .signin-link:hover,
+.footer-wrapper .login-portal .owner-login-signup .login-link:hover,
+.footer-wrapper .login-portal .owner-login-signup .signin-link:hover {
+  text-decoration: underline;
+}
+
+.footer-wrapper .login-portal .signup-title {
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.footer-wrapper .login-portal .signup-title .title {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 300;
+  color: #fff;
+}
+
+@media only screen and (max-width: 480px) {
+  .footer-wrapper .login-portal .signup-title .title {
+    font-size: 16px;
+  }
+}
+
+.footer-wrapper .site-map-wrapper {
+  border-top: 1px solid gray;
+  padding: 2rem 0 1rem 0;
+  color: #fff;
+  font-size: 14px;
+}

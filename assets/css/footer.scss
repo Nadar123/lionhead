@@ -1,0 +1,112 @@
+@import './var.scss';
+@import './mixmin.scss';
+.footer-wrapper {
+  background-color: #282725;
+  padding: 4rem 0 2rem 0;
+  .footer-title,
+  .footer-stay-contact,
+  .associations-title,
+  .associations-title {
+    padding-bottom: 1rem;
+    h3 {
+      font-size: 1rem;
+      font-weight: 200;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: $white;
+
+    } 
+  }
+
+  .content {
+    display: flex;
+
+    &:last-child {
+      padding-bottom: 1rem;
+    }
+
+    .icon {
+      margin-right: 1rem;
+      transform: scale(1);
+      transition: transform 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.4);
+      }
+    }
+    .text {
+      position: relative;
+      color: $white;
+      font-size: 13px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      &:hover,
+      &:focus {
+        left: 5px;
+      }
+    }
+  }
+  .associations-image {
+    width: 20%;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.4);
+    }
+  }
+  .associations-title {
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $white;
+  }
+  .login-portal {
+    text-align: center;
+    @media only screen and (max-width: 480px) {
+      text-align: left;
+    }
+
+    .online-title {
+      padding-bottom: 0.5rem;
+      .title {
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: 300;
+        color: $white;
+      }
+    }
+    .login-signup,
+    .owner-login-signup {
+      .login-link,
+      .signin-link {
+        color: $white;
+        padding: 0.5rem;
+        transition: text-decoration 0.3s ease-in-out;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .signup-title {
+      padding-top: 2rem;
+      padding-bottom: 0.5rem;
+      .title {
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: 300;
+        color: $white;
+        @media only screen and (max-width: 480px) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .site-map-wrapper {
+    border-top: 1px solid gray;
+    padding: 2rem 0 1rem 0;
+    color: $white;
+    font-size: 14px;
+  }
+}

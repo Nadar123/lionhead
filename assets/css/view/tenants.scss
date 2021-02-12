@@ -1,0 +1,37 @@
+@import '../var.scss';
+@import '../mixmin.scss';
+
+.tenants-banner {
+  background-color: #282725;
+
+  .content {
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+
+    h3.title {
+      margin-top: 1.5rem;
+      color: #fff;
+      text-transform: uppercase;
+      line-height: 20px;
+      font-weight: 400;
+    }
+
+    .search-link {
+
+      a.link {
+        display: flex;
+        align-items: center;
+        text-align: right;
+        img {
+          width: 6%;
+        }
+      }
+    }
+  }
+  .sidebar-wrapper {
+    @media only screen and (max-width: 990px) {
+      display: none;
+    }
+  } 
+}

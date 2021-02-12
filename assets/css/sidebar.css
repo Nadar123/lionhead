@@ -1,0 +1,45 @@
+/*sidebar*/
+.sidebar-wrapper .title {
+  margin-bottom: 0rem !important;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.sidebar-wrapper .title h5 {
+  margin-bottom: 1rem;
+  letter-spacing: 3px;
+}
+
+.sidebar-wrapper .content-wrappaer {
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-wrapper .content-wrappaer h5 {
+  position: relative;
+  color: black;
+}
+
+.sidebar-wrapper .content-wrappaer h5::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 6px;
+  z-index: 1;
+  background: red;
+  border-radius: 50%;
+  left: -14px;
+}
+
+.sidebar-wrapper .content-wrappaer .link .text {
+  color: #282725;
+  text-transform: none;
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 20px;
+}
+
+.sidebar-wrapper .content-wrappaer .link .text:hover {
+  color: brown;
+}

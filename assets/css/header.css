@@ -1,0 +1,162 @@
+/*header*/
+.header .header-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .header-list .header-item {
+  margin: 1rem 2rem;
+  cursor: pointer;
+}
+
+.header .header-list .header-item a {
+  display: flex;
+  align-items: end;
+  color: black;
+  transition: color 0.2s ease;
+  font-size: 0.875rem;
+}
+
+.header .header-list .header-item a .fa {
+  font-size: 1.8rem;
+  margin-right: 0.875rem;
+  color: black;
+}
+
+.header .header-list .header-item a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.header .menu-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 990px) {
+  .header .menu-main {
+    flex: 1;
+  }
+}
+
+.header .menu-main .logo a {
+  max-width: 100%;
+}
+
+.header .menu-main .logo a img {
+  max-width: 55%;
+  width: 55%;
+}
+
+.header .menu-main nav.nav .list-items.header_menu_class {
+  display: flex;
+}
+
+@media only screen and (max-width: 990px) {
+  .header .menu-main nav.nav .list-items.header_menu_class {
+    display: none;
+  }
+}
+
+.header .menu-main nav.nav .list-items.header_menu_class .menu-item {
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  transition: border-bottom 0.2s ease;
+}
+
+.header .menu-main nav.nav .list-items.header_menu_class .menu-item a {
+  color: black;
+  font-size: 0.875rem;
+}
+
+.header .menu-main nav.nav .list-items.header_menu_class .menu-item a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.header .menu-main nav.nav .list-items.header_menu_class .menu-item.current-menu-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.header .menu-main nav.nav .list-items.header_menu_class .menu-item.menu-item-has-children {
+  position: relative;
+}
+
+.header .menu-main nav.nav .list-items.header_menu_class .menu-item.menu-item-has-children:after {
+  content: "\f078";
+  font-family: FontAwesome;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  display: inline-block;
+  vertical-align: super;
+  transition: transform 0.3s ease;
+}
+
+.header .menu-main nav.nav .list-items.header_menu_class .menu-item.menu-item-has-children .sub-menu {
+  text-align: center;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 5.5vh;
+  right: 0;
+  left: -24px;
+  margin: auto;
+  white-space: nowrap;
+  width: 200px;
+  max-width: 200px;
+  z-index: 1;
+}
+
+.header .menu-main nav.nav .list-items.header_menu_class .menu-item.menu-item-has-children:hover .sub-menu {
+  display: block;
+}
+
+.header .menu-main nav.nav .list-items.header_menu_class .menu-item.menu-item-has-children:hover .sub-menu li a {
+  padding: 1rem 2rem;
+  font-size: 0.875rem;
+  color: #fff;
+}
+
+.header .menu-main nav.nav .list-items.header_menu_class .menu-item.menu-item-has-children:hover .sub-menu li:hover {
+  border-bottom: none;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header .menu-main nav.nav .list-items.header_menu_class .menu-item.menu-item-has-children:hover:hover:after {
+  transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 990px) {
+  .header .moblie-col {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.header .top-header .pay-rent-btn {
+  padding: 6px 40px;
+  border: 1px solid black;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.header .top-header .pay-rent-btn .pay-rent-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  line-height: 1rem;
+  text-transform: uppercase;
+}
+
+.header .top-header .pay-rent-btn .pay-rent-submit .pay-rent-img {
+  width: 15%;
+  margin-right: 1rem;
+}
+
+.header .top-header .pay-rent-btn:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,27 @@
+.tenants-banner {
+  background-color: #282725;
+}
+
+.tenants-banner .content h3.title {
+  margin-top: 1.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.tenants-banner .content .search-link a.link {
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+
+.tenants-banner .content .search-link a.link img {
+  width: 6%;
+}
+
+@media only screen and (max-width: 990px) {
+  .tenants-banner .sidebar-wrapper {
+    display: none;
+  }
+}

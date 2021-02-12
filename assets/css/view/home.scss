@@ -1,0 +1,45 @@
+@import '../var.scss';
+@import '../mixmin.scss';
+/*home*/
+.home-page {
+  position: relative;
+  .no-padd {
+    padding: 0;
+  }
+  .home-title-wrapper {
+    position: absolute;
+    top: 15%;
+    @media only screen and (max-width: 480px) {
+      top: 6%;
+      padding: 0 1rem;
+    }
+    .title {
+      color:$black;
+      font-size: 55px;
+      line-height: 60px;
+      font-weight: 600;
+      width: 63%;
+      @media only screen and (max-width: 480px) {
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 600;
+        width: 100%;
+      }
+
+    }
+    .sub-title {
+     padding-bottom: 1rem;
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 600;
+      color: $black;
+    }
+    .house-link-search {
+      width: 100%;
+      .house-search {
+        min-height: auto;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
